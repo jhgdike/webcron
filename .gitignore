@@ -1,3 +1,6 @@
 webcron*
 bin/
 *.tar.gz
+*.log
+.idea/*
+conf/*
