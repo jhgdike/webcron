@@ -30,7 +30,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>
-			<a class="brand" href="/">
+			<a class="brand" href="/cron/">
 				<span class="icon-time"></span> {{.siteName}}				
 			</a>		
 			<div class="nav-collapse">
@@ -43,8 +43,8 @@
 						</a>
 						
 						<ul class="dropdown-menu">
-							<li><a href="/profile">修改资料</a></li>
-							<li><a href="/logout">退出登录</a></li>
+							<li><a href="/cron/profile">修改资料</a></li>
+							<li><a href="/cron/logout">退出登录</a></li>
 						</ul>						
 					</li>
 				</ul>				
@@ -58,25 +58,25 @@
 		<div class="container">
 			<ul class="mainnav">
 				<li {{if eq .curRoute "main.index"}}class="active"{{end}}>
-					<a href="/">
+					<a href="/cron/">
 						<i class="icon-dashboard"></i>
 						<span>系统概况</span>
 					</a>	    				
 				</li>
 				<li {{if eq .curController "task"}}class="active"{{end}}>
-					<a href="/task/list">
+					<a href="/cron/task/list">
 						<i class="icon-list-alt"></i>
 						<span>任务管理</span>
 					</a>    				
 				</li>
 				<li {{if eq .curController "group"}}class="active"{{end}}>					
-					<a href="/group/list">
+					<a href="/cron/group/list">
 						<i class="icon-folder-close"></i>
 						<span>分组管理</span>
 					</a>  									
 				</li>
 				<li {{if eq .curController "help"}}class="active"{{end}}>					
-					<a href="/help">
+					<a href="/cron/help">
 						<i class="icon-question-sign"></i>
 						<span>使用帮助</span>
 					</a>  									
@@ -102,7 +102,7 @@
 		<div class="container">
 			<div class="row">
     			<div class="span7">
-    				&copy; 2015-2016 <a href="http://www.lisijie.org">lisijie.org</a>.
+    				&copy; 2017-2019 <a href="http://www.jijindou.com">基金豆</a>.
     			</div>
 			<div class="span5" id="server-time" style="text-align:right">
     				
